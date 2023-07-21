@@ -1,5 +1,5 @@
 {
-  description = "Patrick Materer's Nix flake templates.";
+  description = "Golang Nix flake template.";
 
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs"; };
 
