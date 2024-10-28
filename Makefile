@@ -9,3 +9,10 @@ fmt:
 .PHONY: lint
 lint:
 	@nix run nixpkgs#statix check .
+
+.PHONY: check
+check:
+    @nix run "github:DeterminateSystems/flake-checker"
+
+.PHONY: all
+all: fmt lint check update
