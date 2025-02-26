@@ -9,7 +9,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         pname = "app";
-        version = builtins.substring 0 8 sefl.lastModifiedDate;
+        version = builtins.substring 0 8 self.lastModifiedDate;
       in {
         packages.default = pkgs.buildGoModule {
           inherit pname version;
